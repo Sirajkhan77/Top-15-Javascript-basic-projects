@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project links</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            padding: 10px;
+            background-image: url(./Image.jpg);
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            z-index: -1; 
+        }
+        .projects{
+            backdrop-filter: blur(2px);
+            color: white;
+            box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.15);
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            padding: 15px 30px;
+            margin: 30px auto;
+            border-top: 2px ridge #019f55;
+            /* border-left: 2px ridge white; */
+            border-right: 3px solid #019f55;
+            /* border-bottom: 1px solid black; */
+        }
+        .Main-heading{
+            font-size: 2rem;
+            padding-bottom: 5px;
+            border-bottom: 4px solid white;
+            width: 45%;
+            text-align: center;
+            margin: 30px auto;
+        }
+        .Main-heading span{
+            color: #019f55;
+        }
+        .all {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 85%;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 13px;
+            margin-left: 11px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #494949;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #019f55;
+            border-radius: 9px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #006416;
+        }
+
+
+        .project{
+            display: flex;
+            padding:10px 15px;
+            justify-content: space-between;
+            border-bottom: 2px solid #019f55;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .project button a{
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .project button{
+            padding: 9px;
+            background:#019f55;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        .project button:hover{
+            background: linear-gradient(135deg, rgb(46, 46, 46) , rgb(0, 0, 0));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="projects">
+            <h1 class="Main-heading">
+                My <span>Frontend</span> Projects
+            </h1>  
+                <div class="all">
+                    
+                    <div class="project">
+                        <h3>1. Weather App</h3>
+                        <button><a href="/01 Weather app/index.html">View Project</a></button>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>2. Todo-List App</h3>
+                        <button><a href="/02 Todo list app/index.html">View Project</a>
+                        </button>
+                    </div>
+    
+                    <div class="project">
+                        <h3>3. Quiz App</h3>
+                        <button>
+                            <a href="/03 Quizz app/index.html">View Project</a>
+                        </button>
+                    </div>
+                    
+    
+                    <div class="project">
+                        <h3>4. Random Password Generator</h3>
+                        <button>
+                            <a href="/04 Random password generator/">View Project</a>
+                        </button>
+                    </div>
+                    
+    
+                    <div class="project">
+                        <h3>5. Notes Building app</h3>
+                        <button>
+                            <a href="/05 Notes Building app/">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>6. Age Calculator</h3>
+                        <button>
+                            <a href="/06 Age calculator/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>7. Quote Generator</h3>
+                        <button>
+                            <a href="/07 Quote Generator/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>8. Digital Clock</h3>
+                        <button>
+                            <a href="/08 Digital Clock/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>9. QR Code Generator</h3>
+                        <button>
+                            <a href="./09 QR Code Generator/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>10. Toast Notification</h3>
+                        <button>
+                            <a href="./11 Toast Notification/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>11. Music Player app</h3>
+                        <button>
+                            <a href="./10 Music Player/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>12. StopWatch</h3>
+                        <button>
+                            <a href="./12 Stopwatch/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                    <div class="project">
+                        <h3>13. Calculator</h3>
+                        <button>
+                            <a href="./13 Calculator/index.html">View Project</a>
+                        </button>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</body>
+</html>
